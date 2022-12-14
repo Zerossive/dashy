@@ -1,47 +1,107 @@
----
-# Page meta info, like heading, footer text and nav links
-pageInfo:
-  title: Dashy
-  description: Welcome to your new dashboard!
-  navLinks:
-  - title: GitHub
-    path: https://github.com/Lissy93/dashy
-  - title: Documentation
-    path: https://dashy.to/docs
-
-# Optional app settings and configuration
 appConfig:
-  theme: colorful
-
-# Main content - An array of sections, each containing an array of items
+  theme: default
+  language: en
+  startingView: default
+  defaultOpeningMethod: sametab
+  statusCheck: false
+  statusCheckInterval: 0
+  faviconApi: allesedv
+  layout: vertical
+  iconSize: large
+  routingMode: history
+  enableMultiTasking: false
+  widgetsAlwaysUseProxy: false
+  webSearch:
+    disableWebSearch: false
+    searchEngine: google
+    openingMethod: sametab
+    searchBangs: {}
+  enableFontAwesome: true
+  enableMaterialDesignIcons: false
+  hideComponents:
+    hideHeading: false
+    hideNav: false
+    hideSearch: false
+    hideSettings: false
+    hideFooter: true
+  auth:
+    enableGuestAccess: false
+    users: []
+    enableKeycloak: false
+  showSplashScreen: false
+  preventWriteToDisk: false
+  preventLocalSave: false
+  disableConfiguration: false
+  disableConfigurationForNonAdmin: false
+  allowConfigEdit: true
+  enableServiceWorker: false
+  disableContextMenu: false
+  disableUpdateChecks: false
+  disableSmartSort: false
+  enableErrorReporting: false
+pageInfo:
+  title: Danny's Dashboard
+  description: ''
+  navLinks:
+    - title: ':)'
+      path: https://multidashboard.netlify.app/
+      target: sametab
+  footerText: ':)'
+  logo: https://i.postimg.cc/QCmpdSMQ/Space-Cube-Logo.png
 sections:
-- name: Getting Started
-  icon: fas fa-rocket
-  items:
-  - title: Dashy Live
-    description: Development a project management links for Dashy
-    icon: https://i.ibb.co/qWWpD0v/astro-dab-128.png
-    url: https://live.dashy.to/
-    target: newtab
-  - title: GitHub
-    description: Source Code, Issues and Pull Requests
-    url: https://github.com/lissy93/dashy
-    icon: favicon
-  - title: Docs
-    description: Configuring & Usage Documentation
-    provider: Dashy.to
-    icon: far fa-book
-    url: https://dashy.to/docs
-  - title: Showcase
-    description: See how others are using Dashy
-    url: https://github.com/Lissy93/dashy/blob/master/docs/showcase.md
-    icon: far fa-grin-hearts
-  - title: Config Guide
-    description: See full list of configuration options
-    url: https://github.com/Lissy93/dashy/blob/master/docs/configuring.md
-    icon: fas fa-wrench
-  - title: Support
-    description: Get help with Dashy, raise a bug, or get in contact
-    url: https://github.com/Lissy93/dashy/blob/master/.github/SUPPORT.md
-    icon: far fa-hands-helping
-  
+  - name: Management
+    icon: fad fa-laptop-code
+    items:
+      - title: GitHub
+        description: Zerossive GitHub
+        icon: favicon
+        url: https://github.com/Zerossive
+        id: 0_1021_github
+      - title: namecheap
+        description: Domain management
+        icon: https://icon.horse/icon/ap.www.namecheap.com
+        url: https://ap.www.namecheap.com/dashboard
+        id: 1_1021_namecheap
+      - title: Netlify
+        description: Website hosting overview
+        icon: favicon
+        url: https://app.netlify.com/
+        id: 2_1021_netlify
+      - title: Contentful
+        description: Headless CMS
+        icon: favicon
+        url: https://app.contentful.com/
+        id: 3_1021_contentful
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+  - name: Websites
+    icon: fad fa-link
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: Portfolio
+        description: Danny's portfolio website
+        icon: https://icon.horse/icon/dannyharris.info
+        url: https://dannyharris.info/
+        statusCheck: true
+        id: 0_838_portfolio
+      - title: KNB Racing
+        description: Kaylee's website
+        icon: https://icon.horse/icon/knbracing.com
+        url: https://knbracing.com/
+        statusCheck: true
+        id: 1_838_knbracing
+      - title: MultiDashboard
+        description: New tab page
+        icon: https://icon.horse/icon/multidashboard.netlify.app
+        url: https://multidashboard.netlify.app/
+        statusCheck: true
+        id: 2_838_multidashboard
