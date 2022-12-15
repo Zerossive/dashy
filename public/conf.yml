@@ -1,5 +1,5 @@
 appConfig:
-  theme: default
+  theme: thebe
   language: en
   startingView: default
   defaultOpeningMethod: sametab
@@ -42,10 +42,6 @@ appConfig:
 pageInfo:
   title: Danny's Dashboard
   description: ''
-  navLinks:
-    - title: ':)'
-      path: https://multidashboard.netlify.app/
-      target: sametab
   footerText: ':)'
   logo: https://i.postimg.cc/QCmpdSMQ/Space-Cube-Logo.png
 sections:
