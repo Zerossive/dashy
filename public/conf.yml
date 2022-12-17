@@ -89,23 +89,32 @@ sections:
         url: https://dannyharris.info/
         statusCheck: true
         id: 0_838_portfolio
-      - type: domain-monitor
-        options:
-          domain: dannyharris.info
-          apiKey: f6505ecb26744622a7c5977daa6e7261
       - title: KNB Racing
         description: Kaylee's website
         icon: https://icon.horse/icon/knbracing.com
         url: https://knbracing.com/
         statusCheck: true
         id: 1_838_knbracing
-      - type: domain-monitor
-        options:
-          domain: knbracing.com
-          apiKey: f6505ecb26744622a7c5977daa6e7261
       - title: MultiDashboard
         description: New tab page
         icon: https://icon.horse/icon/multidashboard.netlify.app
         url: https://multidashboard.netlify.app/
         statusCheck: true
         id: 2_838_multidashboard
+  - name: Domains
+    icon: fad fa-link
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - type: domain-monitor
+        options:
+          domain: dannyharris.info
+          apiKey: f6505ecb26744622a7c5977daa6e7261
+      - type: domain-monitor
+        options:
+          domain: knbracing.com
+          apiKey: f6505ecb26744622a7c5977daa6e7261
