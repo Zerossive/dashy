@@ -101,20 +101,3 @@ sections:
         url: https://multidashboard.netlify.app/
         statusCheck: true
         id: 2_838_multidashboard
-  - name: Domains
-    icon: fad fa-link
-    displayData:
-      sortBy: default
-      rows: 1
-      cols: 1
-      collapsed: false
-      hideForGuests: false
-    items:
-      - type: domain-monitor
-        options:
-          domain: dannyharris.info
-          apiKey: f6505ecb26744622a7c5977daa6e7261
-      - type: domain-monitor
-        options:
-          domain: knbracing.com
-          apiKey: f6505ecb26744622a7c5977daa6e7261
