@@ -103,7 +103,7 @@ sections:
         id: 2_838_multidashboard
       - title: AI Image Requestor
         description: Request images via API
-        icon: https://icon.horse/icon/multidashboard.netlify.app
+        icon: https://icon.horse/icon/imagerequest.netlify.app
         url: https://imagerequest.netlify.app/
         statusCheck: true
         id: 3_838_imagerequest
